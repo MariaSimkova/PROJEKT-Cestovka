@@ -1,2 +1,55 @@
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
+$primary-color: #F03000;
+$offer-color: #FFFFFF;
+$background-item: #F0F0F0;
+$background-footer: #444444;
+$color-main-text: #000000;
+$color-date: #888888;
+
+
+$font-main-text: 'Montserrat', sans-serif;
+$font-description: 'Open Sans', sans-serif;
+
+$padding-block: 20px;
+$padding-text: 10px;
+
+body {
+    padding: $padding-block;
+    font-family: $font-main-text;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    padding: $padding-block;
+    display: flex;
+    flex-direction: column;
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        padding: $padding-block;
+    }
+    
+    &__navbar {
+        padding: 40px 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        align-items: baseline;
+    }
+
+    &__link {
+        font-size: 18px;
+        font-weight: bold;
+        color: $primary-color;
+    }
+
+    &__link--active {
+        background-color: $primary-color;
+        color: white;
+        padding: $padding-block;
+    }
+
+}

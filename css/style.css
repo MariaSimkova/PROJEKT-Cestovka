@@ -1,7 +1,36 @@
-html {
-  box-sizing: border-box;
+body {
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 
-*, :after, :before {
-  box-sizing: inherit;
+a {
+  text-decoration: none;
+}
+
+.header {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.header__logo {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.header__navbar {
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: baseline;
+}
+.header__link {
+  font-size: 18px;
+  font-weight: bold;
+  color: #F03000;
+}
+.header__link--active {
+  background-color: #F03000;
+  color: white;
+  padding: 20px;
 }/*# sourceMappingURL=style.css.map */
