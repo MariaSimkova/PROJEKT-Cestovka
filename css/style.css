@@ -22,7 +22,7 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  align-items: baseline;
+  align-items: center;
 }
 .header__link {
   font-size: 18px;
@@ -33,4 +33,11 @@ a {
   background-color: #F03000;
   color: white;
   padding: 20px;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }/*# sourceMappingURL=style.css.map */
