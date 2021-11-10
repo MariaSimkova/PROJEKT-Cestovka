@@ -44,12 +44,12 @@ a {
         font-size: 18px;
         font-weight: bold;
         color: $primary-color;
+        padding: $padding-block;
     }
 
-    &__link--active {
+    &__link:hover {
         background-color: $primary-color;
         color: white;
-        padding: $padding-block;
     }
 
 
@@ -58,5 +58,83 @@ a {
         align-items: center;
         justify-content: space-between;
     }
+
+}
+
+.offer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+
+    &__price {
+        background-color: $primary-color;
+        padding: $padding-text;
+        font-weight: bold;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    &__item {
+        padding: $padding-block;
+        height: 150px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-size: cover;
+        align-items: start;
+    }
+
+    &__item--main {
+        height: 250px;
+
+        .offer__title {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .offer__description {
+            font-size: 16px;
+        }
+    }
+
+    &__item--1 {
+        grid-column: 1 / -1;
+        background-image: url(/images/palmy@2x.png);
+    }
+
+    &__item--2 {
+        grid-column: 1 / -1;
+        background-image: url(/images/jezero2@2x.png)
+    }
+
+    &__item--3 {
+        grid-column: 1 / -1;
+        background-image: url(/images/nakole@2x.png)
+    }
+
+    .subtitle {
+        grid-column: 1 / -1;
+        padding-top: $padding-block * 2;
+    }
+
+    &__item--4 {
+        grid-column: 1 / -1;
+        background-image: url(/images/lodicka@2x.png)
+    }
+
+    &__item--5 {
+        grid-column: 1 / -1;
+        background-image: url(/images/podkova@2x.png)
+    }
+
+    &__item--6 {
+        grid-column: 1 / -1;
+        background-image: url(/images/zatoka@2x.png)
+    }
+
 
 }

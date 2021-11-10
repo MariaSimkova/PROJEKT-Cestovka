@@ -28,11 +28,11 @@ a {
   font-size: 18px;
   font-weight: bold;
   color: #F03000;
+  padding: 20px;
 }
-.header__link--active {
+.header__link:hover {
   background-color: #F03000;
   color: white;
-  padding: 20px;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -40,4 +40,67 @@ a {
     align-items: center;
     justify-content: space-between;
   }
+}
+
+.offer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+.offer__price {
+  background-color: #F03000;
+  padding: 10px;
+  font-weight: bold;
+}
+.offer__title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.offer__item {
+  padding: 20px;
+  height: 150px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  align-items: start;
+}
+.offer__item--main {
+  height: 250px;
+}
+.offer__item--main .offer__title {
+  font-size: 28px;
+  font-weight: bold;
+}
+.offer__item--main .offer__description {
+  font-size: 16px;
+}
+.offer__item--1 {
+  grid-column: 1/-1;
+  background-image: url(/images/palmy@2x.png);
+}
+.offer__item--2 {
+  grid-column: 1/-1;
+  background-image: url(/images/jezero2@2x.png);
+}
+.offer__item--3 {
+  grid-column: 1/-1;
+  background-image: url(/images/nakole@2x.png);
+}
+.offer .subtitle {
+  grid-column: 1/-1;
+  padding-top: 40px;
+}
+.offer__item--4 {
+  grid-column: 1/-1;
+  background-image: url(/images/lodicka@2x.png);
+}
+.offer__item--5 {
+  grid-column: 1/-1;
+  background-image: url(/images/podkova@2x.png);
+}
+.offer__item--6 {
+  grid-column: 1/-1;
+  background-image: url(/images/zatoka@2x.png);
 }/*# sourceMappingURL=style.css.map */
