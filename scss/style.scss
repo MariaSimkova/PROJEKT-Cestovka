@@ -30,7 +30,7 @@ a {
 }
 
 .header {
-    padding: $padding-block;
+    // padding: $padding-block;
     display: flex;
     flex-direction: column;
 
@@ -41,7 +41,7 @@ a {
     }
     
     &__navbar {
-        padding: 40px 20px;
+        padding: 40px 0;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
