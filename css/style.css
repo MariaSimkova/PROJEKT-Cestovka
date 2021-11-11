@@ -99,7 +99,7 @@ a {
 }
 .offer__item--1 {
   grid-column: 1/-1;
-  background-image: url(/images/palmy@2x.png);
+  background-image: url(/images/palmy2x.png);
 }
 @media screen and (min-width: 960px) {
   .offer__item--1 {
