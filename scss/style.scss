@@ -16,6 +16,7 @@ $padding-text: 10px;
 
 body {
     padding: $padding-block;
+    margin: 0;
     font-family: $font-main-text;
 }
 
@@ -123,7 +124,7 @@ a {
 
     &__item--1 {
         grid-column: 1 / -1;
-        background-image: url(images/palmy@2x.png);
+        background-image: url(/images/);
 
         @media screen and (min-width: 960px) {
             grid-column: 1 / -3;

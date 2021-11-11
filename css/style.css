@@ -1,5 +1,6 @@
 body {
   padding: 20px;
+  margin: 0;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -99,7 +100,7 @@ a {
 }
 .offer__item--1 {
   grid-column: 1/-1;
-  background-image: url(images/palmy@2x.png);
+  background-image: url(/images/);
 }
 @media screen and (min-width: 960px) {
   .offer__item--1 {
