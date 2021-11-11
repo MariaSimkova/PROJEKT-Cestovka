@@ -134,7 +134,7 @@ a {
 
     &__item--2 {
         grid-column: 1 / -1;
-        background-image: url(/images/jezero2@2x.png);
+        background-image: url(/images/jezero2@2x.png');
 
         @media screen and (min-width: 768px) {
             grid-column: 1 / 4;
