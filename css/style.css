@@ -8,7 +8,8 @@ a {
 }
 
 .subtitle {
-  padding-top: 40px;
+  padding: 20px 0;
+  margin: 0;
 }
 
 .header {
@@ -50,6 +51,7 @@ a {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 20px;
+  padding-bottom: 20px;
 }
 @media screen and (min-width) {
   .offer {
@@ -176,7 +178,12 @@ a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  padding: 40px 0;
+  padding: 20px 0;
+}
+@media screen and (min-width: 768px) {
+  .service {
+    gap: 20px;
+  }
 }
 .service__item {
   grid-column: 1/-1;
@@ -214,4 +221,36 @@ a {
 }
 .service__description {
   font-size: 16px;
+}
+
+.news {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-bottom: 20px;
+}
+.news__item {
+  grid-column: span 3;
+  background-color: #F0F0F0;
+  padding: 20px;
+  font-weight: bold;
+}
+@media screen and (min-width: 960px) {
+  .news__item {
+    grid-column: span 1;
+  }
+}
+.news__date {
+  color: #888888;
+  font-size: 16px;
+}
+.news__title {
+  color: #F03000;
+}
+
+.footer {
+  background-color: #444444;
+  padding: 20px;
+  color: white;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

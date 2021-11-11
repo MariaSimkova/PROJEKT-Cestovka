@@ -9,7 +9,7 @@ $color-date: #888888;
 $font-main-text: 'Montserrat', sans-serif;
 $font-description: 'Open Sans', sans-serif;
 
-$heihgt-grid-row: 180px;
+$height-grid-row: 180px;
 
 $padding-block: 20px;
 $padding-text: 10px;
@@ -24,7 +24,8 @@ a {
 }
 
 .subtitle {
-    padding-top: $padding-block * 2;
+    padding: $padding-block 0;
+    margin: 0;
 }
 
 .header {
@@ -71,9 +72,10 @@ a {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
+    padding-bottom: $padding-block;
 
     @media screen and (min-width) {
-        grid-auto-rows: $heihgt-grid-row;
+        grid-auto-rows: $height-grid-row;
     }
 
     &__price {
@@ -98,7 +100,7 @@ a {
         align-items: start;
 
         @media screen and (min-width: 768) {
-            height: $heihgt-grid-row;
+            height: $height-grid-row;
         }
     }
 
@@ -115,7 +117,7 @@ a {
         }
 
         @media screen and (min-width: 768px) {
-            height: $heihgt-grid-row * 2;
+            height: $height-grid-row * 2;
         }
     }
 
@@ -197,7 +199,11 @@ a {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    padding: $padding-block * 2 0;
+    padding: $padding-block 0;
+
+    @media screen and (min-width: 768px) {
+        gap: $padding-block;
+    }
 
     &__item {
         grid-column: 1 / -1;
@@ -241,3 +247,36 @@ a {
 
 }
 
+.news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-bottom: $padding-block;
+
+    &__item {
+        grid-column: span 3;
+        background-color: $background-item;
+        padding: $padding-block;
+        font-weight: bold;
+
+        @media screen and (min-width: 960px) {
+            grid-column: span 1;
+        }
+    }
+
+    &__date {
+        color: $color-date;
+        font-size: 16px;
+    }
+
+    &__title {
+        color: $primary-color;
+    }
+}
+
+.footer {
+    background-color: $background-footer;
+    padding: $padding-block;
+    color: white;
+    text-align: center;
+}
